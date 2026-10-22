@@ -1,0 +1,80 @@
+{
+  "test_file": "/home/jekabs/QWEN-FINE-TUNING/dataset/data/sft/test.jsonl",
+  "test_sha256": "3cc75e53607d8a35cb6f88cbb11fe7ae5e1fa310684c4586d4b109dcca01011b",
+  "model": "/home/jekabs/QWEN-FINE-TUNING/models/Qwen3-0.6B",
+  "adapter": {
+    "examples": 300,
+    "json_parse_success": 300,
+    "schema_success": 299,
+    "exact_matches": 263,
+    "exact_match_accuracy": 0.8766666666666667,
+    "tp": 788,
+    "fp": 37,
+    "fn": 42,
+    "micro_precision": 0.9551515151515152,
+    "micro_recall": 0.9493975903614458,
+    "micro_f1": 0.9522658610271904,
+    "by_scenario_kind": {
+      "duplicates": {
+        "examples": 75,
+        "exact_matches": 47,
+        "exact_match_accuracy": 0.6266666666666667
+      },
+      "exclusions": {
+        "examples": 75,
+        "exact_matches": 72,
+        "exact_match_accuracy": 0.96
+      },
+      "mixed": {
+        "examples": 75,
+        "exact_matches": 69,
+        "exact_match_accuracy": 0.92
+      },
+      "requests": {
+        "examples": 75,
+        "exact_matches": 75,
+        "exact_match_accuracy": 1.0
+      }
+    },
+    "mean_latency_seconds": 0.5332435055300447,
+    "model": "adapter"
+  },
+  "limit": 300,
+  "base": {
+    "examples": 300,
+    "json_parse_success": 4,
+    "schema_success": 2,
+    "exact_matches": 0,
+    "exact_match_accuracy": 0.0,
+    "tp": 0,
+    "fp": 10,
+    "fn": 830,
+    "micro_precision": 0.0,
+    "micro_recall": 0.0,
+    "micro_f1": 0.0,
+    "by_scenario_kind": {
+      "duplicates": {
+        "examples": 75,
+        "exact_matches": 0,
+        "exact_match_accuracy": 0.0
+      },
+      "exclusions": {
+        "examples": 75,
+        "exact_matches": 0,
+        "exact_match_accuracy": 0.0
+      },
+      "mixed": {
+        "examples": 75,
+        "exact_matches": 0,
+        "exact_match_accuracy": 0.0
+      },
+      "requests": {
+        "examples": 75,
+        "exact_matches": 0,
+        "exact_match_accuracy": 0.0
+      }
+    },
+    "mean_latency_seconds": 0.37300937786353944,
+    "model": "base"
+  }
+}

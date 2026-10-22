@@ -39,3 +39,15 @@ hf download Qwen/Qwen3-0.6B --local-dir models/Qwen3-0.6B
 
 - `.env` is not committed. Data generation reads `OPENROUTER_API_KEY` from the environment or `dataset/.env`.
 - Model weights, virtual environments, adapters, logs, and old partial runs are excluded from git.
+
+## Results
+
+Base Qwen3-0.6B vs the QLoRA adapter on the frozen 300-example test set:
+
+| Metric | Base | Adapter |
+|---|---:|---:|
+| Schema-valid | 2/300 | 299/300 |
+| Exact match | 0/300 | **263/300 (87.7%)** |
+| Micro F1 | 0.0 | **0.952** |
+
+Full breakdown: [train/RESULTS.md](train/RESULTS.md).
