@@ -1,0 +1,56 @@
+{
+  "batch": "20261022_193205",
+  "source_scenarios": "/home/jekabs/QWEN-FINE-TUNING/dataset/data/scenarios/scenarios_2500_seed42.jsonl",
+  "source_scenarios_sha256": "543683f22265b8782be5315479b4832c7a957bb6f935516f1bce2f29805fd562",
+  "merged": "/home/jekabs/QWEN-FINE-TUNING/dataset/data/generated/dataset_2500_live.jsonl",
+  "merged_sha256": "3ab4577c6fbc0dbc6ba59df10c15fc3add6801debac6718832a071c6a3e3cf0b",
+  "total": 2500,
+  "counts_by_kind": {
+    "requests": 625,
+    "duplicates": 625,
+    "exclusions": 625,
+    "mixed": 625
+  },
+  "splits": {
+    "train": {
+      "path": "/home/jekabs/QWEN-FINE-TUNING/dataset/data/splits_live/train.jsonl",
+      "count": 2000,
+      "first_id": 1,
+      "last_id": 2000,
+      "sha256": "baac0a8a3b122b13ecb539b91182321e6a23632510de77c98f894d6f7c54bbc9",
+      "counts_by_kind": {
+        "requests": 500,
+        "duplicates": 500,
+        "exclusions": 500,
+        "mixed": 500
+      }
+    },
+    "val": {
+      "path": "/home/jekabs/QWEN-FINE-TUNING/dataset/data/splits_live/val.jsonl",
+      "count": 200,
+      "first_id": 2001,
+      "last_id": 2200,
+      "sha256": "5929cafb9167b104669f828d3d4726794dc70c0ec19dec0af5149bafa983446a",
+      "counts_by_kind": {
+        "requests": 50,
+        "duplicates": 50,
+        "exclusions": 50,
+        "mixed": 50
+      }
+    },
+    "test": {
+      "path": "/home/jekabs/QWEN-FINE-TUNING/dataset/data/splits_live/test.jsonl",
+      "count": 300,
+      "first_id": 2201,
+      "last_id": 2500,
+      "sha256": "5abc7e40d249b69da147080cf1e4db3060907ce42fee34836a5303fdde5ad345",
+      "counts_by_kind": {
+        "requests": 75,
+        "duplicates": 75,
+        "exclusions": 75,
+        "mixed": 75
+      }
+    }
+  },
+  "review_status": "unreviewed; sentences require semantic review before training"
+}

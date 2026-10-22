@@ -1,0 +1,21 @@
+{
+  "prompt_path": "benchmark/prompts/extraction_v2.txt",
+  "prompt_sha256": "d077e6d5abc4ecdf5a8ef4b8961ff6ea533262d71ba496c66a51c0f8cf1a12d2",
+  "splits": {
+    "train": {
+      "path": "data/sft/train.jsonl",
+      "count": 2000,
+      "sha256": "c8bb90d3c11c79d7d1f1d8f913eff06f0cde0d82a2ffa516ce1820ce08311414"
+    },
+    "val": {
+      "path": "data/sft/val.jsonl",
+      "count": 200,
+      "sha256": "1311413a3749b57532003e5761bd370f111dc3a5d96a0e5a863243738fe46625"
+    },
+    "test": {
+      "path": "data/sft/test.jsonl",
+      "count": 300,
+      "sha256": "3cc75e53607d8a35cb6f88cbb11fe7ae5e1fa310684c4586d4b109dcca01011b"
+    }
+  }
+}

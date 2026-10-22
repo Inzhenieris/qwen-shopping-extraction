@@ -1,0 +1,17 @@
+.venv/
+models/
+train/out/
+*.log
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+dataset/.env
+dataset/logs/
+dataset/archive/
+dataset/reports/
+dataset/data/generated/live_*
+dataset/data/generated/shard_*
+dataset/data/generated/dataset_100.jsonl
+dataset/data/generated/scenarios_2500_seed42_rendered.jsonl
+dataset/data/splits/

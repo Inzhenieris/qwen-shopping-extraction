@@ -1,0 +1,44 @@
+{
+  "model": "qwen3:0.6b",
+  "model_metadata": {
+    "name": "qwen3:0.6b",
+    "model": "qwen3:0.6b",
+    "modified_at": "2026-10-22T09:38:36.743141225+03:00",
+    "size": 522653767,
+    "digest": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen3",
+      "families": [
+        "qwen3"
+      ],
+      "parameter_size": "751.63M",
+      "quantization_level": "Q4_K_M",
+      "context_length": 40960,
+      "embedding_length": 1024
+    },
+    "capabilities": [
+      "completion",
+      "tools",
+      "thinking"
+    ]
+  },
+  "dataset": "/home/jekabs/QWEN-FINE-TUNING/dataset/data/generated/dataset_100.jsonl",
+  "dataset_sha256": "809e7d38835f5dbabc91227c02e23a254c3672188c17bff508dd9d6674f3d09f",
+  "prompt": "You are an information extraction engine.\nExtract shopping items from the user's sentence.\nReturn ONLY a valid JSON object with exactly one key: \"items\".\nEach item must have \"name\" (string) and \"quantity\" (integer).\nRules:\n1. Output raw JSON only. Never include Markdown code fences, explanations, or additional text.\n2. Combine repeated items and sum their quantities.\n3. Exclusions apply globally. Remove excluded items entirely, even when they were mentioned earlier.\n4. Never add an item that wasn't requested.\n5. Preserve item names in lowercase using the names from the input.\n6. Sort items alphabetically by name.\n7. If all items are excluded, return {\"items\":[]}.",
+  "prompt_sha256": "ca998593ab9f4d891513dc3fb7bd77234a664bba530b8c814628b647fab5adc7",
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_predict": 1024,
+    "num_ctx": 4096
+  },
+  "think": false,
+  "format_constraint": null,
+  "selected": 3,
+  "selection": "first N rows in file order",
+  "timeout_seconds": 60,
+  "endpoint": "http://127.0.0.1:11434/api/chat",
+  "labels": "scenario-grounded; sentence fidelity not independently reviewed"
+}
